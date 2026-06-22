@@ -1,1 +1,1 @@
-web: python telegram_owl_tools.py
+worker: python telegram_owl_tools.py
