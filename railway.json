@@ -1,5 +1,9 @@
 {
   "build": {
     "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "python telegram_owl_tools.py",
+    "healthcheckPath": "/"
   }
 }
