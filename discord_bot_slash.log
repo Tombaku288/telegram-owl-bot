@@ -1,0 +1,13 @@
+nohup: ignoring input
+2026-06-17 17:12:04,109 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-06-17 17:12:04,109 - discord.client - WARNING - davey is not installed, voice will NOT be supported
+[2026-06-17 17:12:04] [INFO    ] discord.client: logging in using static token
+2026-06-17 17:12:04,110 - discord.client - INFO - logging in using static token
+[2026-06-17 17:12:05] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7c690cff61f06478336f7ed36dce43eb).
+2026-06-17 17:12:05,863 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 7c690cff61f06478336f7ed36dce43eb).
+2026-06-17 17:12:07,867 - __main__ - INFO -  Logged in as EliteAgent_HermesAI#7363
+2026-06-17 17:12:07,868 - __main__ - INFO -  Bot is ready!
+2026-06-17 17:12:08,329 - __main__ - INFO -  Synced 5 slash commands
+2026-06-17 17:12:30,344 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 17:13:19,209 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 17:13:53,792 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"

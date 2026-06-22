@@ -1,0 +1,14 @@
+2026-06-17 15:44:45,225 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getMe "HTTP/1.1 200 OK"
+2026-06-17 15:44:45,410 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-17 15:44:45,413 - telegram.ext.Application - INFO - Application started
+2026-06-17 15:44:56,104 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:45:06,807 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:45:17,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:45:27,127 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:45:37,340 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:45:47,590 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:45:57,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:46:07,879 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:46:17,552 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:46:17,553 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-17 15:46:17,554 - telegram.ext.Application - INFO - Application.stop() complete

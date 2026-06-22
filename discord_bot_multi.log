@@ -1,0 +1,162 @@
+nohup: ignoring input
+2026-06-18 11:07:58,329 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-06-18 11:07:58,329 - discord.client - WARNING - davey is not installed, voice will NOT be supported
+[2026-06-18 11:07:58] [INFO    ] discord.client: logging in using static token
+2026-06-18 11:07:58,330 - discord.client - INFO - logging in using static token
+[2026-06-18 11:07:59] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 58dd11c417ce80c062fec03f535ed2f3).
+2026-06-18 11:07:59,810 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 58dd11c417ce80c062fec03f535ed2f3).
+2026-06-18 11:08:01,827 - __main__ - INFO -  Logged in as EliteAgent_HermesAI#7363
+2026-06-18 11:08:01,827 - __main__ - INFO -  Bot is ready!
+2026-06-18 11:08:01,827 - __main__ - INFO -  Connected to 1 servers:
+2026-06-18 11:08:01,827 - __main__ - INFO -    - Hermes AI Testing (ID: 1516739832087449640)
+2026-06-18 11:08:02,223 - __main__ - INFO -  Synced 8 slash commands globally
+[2026-06-18 11:16:22] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'hello'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 79, in slash_hello
+    await interaction.response.send_message(embed=embed)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'hello' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-06-18 11:16:22,364 - discord.app_commands.tree - ERROR - Ignoring exception in command 'hello'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 79, in slash_hello
+    await interaction.response.send_message(embed=embed)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'hello' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2026-06-18 11:16:34] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'status'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 116, in slash_status
+    await interaction.response.defer()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'status' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-06-18 11:16:34,358 - discord.app_commands.tree - ERROR - Ignoring exception in command 'status'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 116, in slash_status
+    await interaction.response.defer()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'status' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2026-06-18 11:16:56] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'ping'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 104, in slash_ping
+    await interaction.response.defer()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'ping' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-06-18 11:16:56,247 - discord.app_commands.tree - ERROR - Ignoring exception in command 'ping'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 104, in slash_ping
+    await interaction.response.defer()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'ping' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction

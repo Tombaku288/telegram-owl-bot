@@ -1,0 +1,12 @@
+2026-06-17 14:40:10,651 - INFO - Config loaded successfully
+2026-06-17 14:40:10,651 - INFO - Assistant started with model: hermes3:3b
+2026-06-17 14:40:16,457 - INFO - New session: user1
+2026-06-17 14:40:18,337 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 14:40:28,998 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 14:40:42,382 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 14:41:02,656 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 14:41:17,828 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 14:41:35,713 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 14:42:01,856 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 14:42:16,481 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 14:42:21,101 - INFO - Session ended

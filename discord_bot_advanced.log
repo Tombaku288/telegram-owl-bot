@@ -1,0 +1,163 @@
+nohup: ignoring input
+2026-06-18 10:41:56,296 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-06-18 10:41:56,296 - discord.client - WARNING - davey is not installed, voice will NOT be supported
+[2026-06-18 10:41:56] [INFO    ] discord.client: logging in using static token
+2026-06-18 10:41:56,297 - discord.client - INFO - logging in using static token
+[2026-06-18 10:41:58] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6ea35e86a989dd16d4dd6b13586014d7).
+2026-06-18 10:41:58,358 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 6ea35e86a989dd16d4dd6b13586014d7).
+2026-06-18 10:42:00,374 - __main__ - INFO -  Logged in as EliteAgent_HermesAI#7363
+2026-06-18 10:42:00,375 - __main__ - INFO -  Bot is ready!
+2026-06-18 10:42:00,375 - __main__ - INFO -  Connected to 1 servers:
+2026-06-18 10:42:00,375 - __main__ - INFO -    - Hermes AI Testing (ID: 1516739832087449640)
+2026-06-18 10:42:00,765 - __main__ - INFO -  Synced 8 slash commands globally
+2026-06-18 10:42:55,260 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-18 10:43:36,865 - __main__ - INFO - New session for 1516739832087449640_1178304763499126808_1516739833119113328
+2026-06-18 10:43:42,878 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-18 10:46:36,609 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-06-18 10:49:33] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 278, in <module>
+    bot.run(token)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/client.py", line 933, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1987, in _run_once
+    handle._run()
+  File "/usr/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/client.py", line 508, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 249, in on_message
+    response = ollama.chat(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 387, in chat
+    return self._request(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 199, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 139, in _request_raw
+    r = self._client.request(*args, **kwargs)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+
+2026-06-18 10:49:33,543 - discord.gateway - WARNING - Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 278, in <module>
+    bot.run(token)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/client.py", line 933, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1987, in _run_once
+    handle._run()
+  File "/usr/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/client.py", line 508, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/eliteagents/projects/week1/discord_bot_multi.py", line 249, in on_message
+    response = ollama.chat(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 387, in chat
+    return self._request(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 199, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 139, in _request_raw
+    r = self._client.request(*args, **kwargs)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+
+2026-06-18 10:49:42,780 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-06-18 10:49:42] [ERROR   ] discord.client: Attempting a reconnect in 1.26s
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/client.py", line 731, in connect
+    await self.ws.poll_event()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/gateway.py", line 644, in poll_event
+    await self.received_message(msg.data)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/gateway.py", line 549, in received_message
+    await self.send_as_json(beat)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/gateway.py", line 681, in send_as_json
+    await self.send(utils._to_json(data))
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/gateway.py", line 677, in send
+    await self.socket.send_str(data)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/aiohttp/client_ws.py", line 289, in send_str
+    await self._writer.send_frame(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/aiohttp/_websocket/writer.py", line 82, in send_frame
+    self._write_websocket_frame(message, opcode, 0)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/aiohttp/_websocket/writer.py", line 150, in _write_websocket_frame
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+2026-06-18 10:49:42,782 - discord.client - ERROR - Attempting a reconnect in 1.26s
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/client.py", line 731, in connect
+    await self.ws.poll_event()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/gateway.py", line 644, in poll_event
+    await self.received_message(msg.data)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/gateway.py", line 549, in received_message
+    await self.send_as_json(beat)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/gateway.py", line 681, in send_as_json
+    await self.send(utils._to_json(data))
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/gateway.py", line 677, in send
+    await self.socket.send_str(data)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/aiohttp/client_ws.py", line 289, in send_str
+    await self._writer.send_frame(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/aiohttp/_websocket/writer.py", line 82, in send_frame
+    self._write_websocket_frame(message, opcode, 0)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/aiohttp/_websocket/writer.py", line 150, in _write_websocket_frame
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+[2026-06-18 10:49:44] [INFO    ] discord.gateway: Shard ID None has successfully RESUMED session 6ea35e86a989dd16d4dd6b13586014d7.
+2026-06-18 10:49:44,646 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 6ea35e86a989dd16d4dd6b13586014d7.

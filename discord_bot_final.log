@@ -1,0 +1,279 @@
+nohup: ignoring input
+2026-06-18 11:15:56,580 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2026-06-18 11:15:56,580 - discord.client - WARNING - davey is not installed, voice will NOT be supported
+[2026-06-18 11:15:56] [INFO    ] discord.client: logging in using static token
+2026-06-18 11:15:56,581 - discord.client - INFO - logging in using static token
+[2026-06-18 11:15:58] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: a7e001e5489096008a9cadeaeaa48812).
+2026-06-18 11:15:58,596 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: a7e001e5489096008a9cadeaeaa48812).
+2026-06-18 11:16:00,604 - __main__ - INFO -  Logged in as EliteAgent_HermesAI#7363
+2026-06-18 11:16:00,604 - __main__ - INFO -  Connected to 1 servers
+2026-06-18 11:16:01,225 - __main__ - INFO -  Synced 8 slash commands
+[2026-06-18 11:16:48] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 288, in <module>
+    bot.run(token)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/client.py", line 933, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1987, in _run_once
+    handle._run()
+  File "/usr/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 115, in slash_status
+    ollama.chat(model=config['model'], messages=[{'role': 'user', 'content': 'OK'}], options={'max_tokens': 2})
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 387, in chat
+    return self._request(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 199, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 139, in _request_raw
+    r = self._client.request(*args, **kwargs)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+
+2026-06-18 11:16:48,608 - discord.gateway - WARNING - Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 288, in <module>
+    bot.run(token)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/client.py", line 933, in run
+    asyncio.run(runner())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1987, in _run_once
+    handle._run()
+  File "/usr/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1138, in wrapper
+    await self._call(interaction)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 115, in slash_status
+    ollama.chat(model=config['model'], messages=[{'role': 'user', 'content': 'OK'}], options={'max_tokens': 2})
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 387, in chat
+    return self._request(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 199, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/ollama/_client.py", line 139, in _request_raw
+    r = self._client.request(*args, **kwargs)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_sync/http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/httpcore/_backends/sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+
+2026-06-18 11:16:50,156 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+[2026-06-18 11:17:02] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'about'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 156, in slash_about
+    await interaction.response.send_message(embed=embed)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'about' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-06-18 11:17:02,180 - discord.app_commands.tree - ERROR - Ignoring exception in command 'about'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 156, in slash_about
+    await interaction.response.send_message(embed=embed)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 1085, in send_message
+    data = await adapter.create_interaction_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'about' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2026-06-18 11:17:36] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'stats'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 181, in slash_stats
+    await interaction.response.defer()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'stats' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-06-18 11:17:36,172 - discord.app_commands.tree - ERROR - Ignoring exception in command 'stats'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 181, in slash_stats
+    await interaction.response.defer()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'stats' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+[2026-06-18 11:17:41] [ERROR   ] discord.app_commands.tree: Ignoring exception in command 'servers'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 206, in slash_servers
+    await interaction.response.defer()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'servers' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction
+2026-06-18 11:17:41,763 - discord.app_commands.tree - ERROR - Ignoring exception in command 'servers'
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 859, in _do_call
+    return await self._callback(interaction, **params)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/week1/discord_bot_final.py", line 206, in slash_servers
+    await interaction.response.defer()
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/interactions.py", line 892, in defer
+    response = await adapter.create_interaction_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/webhook/async_.py", line 224, in request
+    raise NotFound(response, data)
+discord.errors.NotFound: 404 Not Found (error code: 10062): Unknown interaction
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/tree.py", line 1302, in _call
+    await command._invoke_with_namespace(interaction, namespace)
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 884, in _invoke_with_namespace
+    return await self._do_call(interaction, transformed_values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/eliteagents/projects/bot_env/lib/python3.12/site-packages/discord/app_commands/commands.py", line 877, in _do_call
+    raise CommandInvokeError(self, e) from e
+discord.app_commands.errors.CommandInvokeError: Command 'servers' raised an exception: NotFound: 404 Not Found (error code: 10062): Unknown interaction

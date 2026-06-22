@@ -1,0 +1,7 @@
+2026-06-17 13:51:20,569 - INFO - Bot started with model: hermes3:3b
+2026-06-17 13:51:20,569 - INFO - User: What is your name?
+2026-06-17 13:51:23,567 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 13:51:23,567 - INFO - Bot: You can find me referred to as Hermes 3. My develo
+2026-06-17 13:51:23,567 - INFO - User: What did I just ask you?
+2026-06-17 13:51:27,297 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 13:51:27,298 - INFO - Bot: You asked me what my name is. I responded by shari

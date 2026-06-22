@@ -1,0 +1,27 @@
+2026-06-17 15:46:28,820 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getMe "HTTP/1.1 200 OK"
+2026-06-17 15:46:28,998 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-17 15:46:29,001 - telegram.ext.Application - INFO - Application started
+2026-06-17 15:46:40,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:46:50,294 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:47:00,538 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:47:10,665 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:47:20,740 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:47:30,950 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:47:41,165 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:47:51,281 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:48:01,500 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:48:11,740 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:48:21,808 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:48:32,010 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:48:34,216 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:48:34,217 - __main__ - INFO - User 8641431183: now tell me about popular dance group of 90's in Paris
+2026-06-17 15:48:34,217 - __main__ - INFO - New session: 8641431183
+2026-06-17 15:48:44,013 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-17 15:48:44,937 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/sendMessage "HTTP/1.1 200 OK"
+2026-06-17 15:48:54,739 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:49:04,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:49:15,203 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:49:25,309 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:49:31,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8959740243:AAGW5EHwOvJXjMKXg0jDfQIuWARZ7wHJCB8/getUpdates "HTTP/1.1 200 OK"
+2026-06-17 15:49:31,427 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-17 15:49:31,428 - telegram.ext.Application - INFO - Application.stop() complete
