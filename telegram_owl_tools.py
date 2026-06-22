@@ -3,19 +3,18 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from openai import OpenAI
 
-with open('config.json', 'r') as f:
-    config = json.load(f)
+TELEGRAM_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+OPENROUTER_KEY = os.environ.get('OPENROUTER_API_KEY')
 
-with open('telegram_token.env', 'r') as f:
-    token = f.read().strip().split('=')[1]
-
-with open('openrouter.env', 'r') as f:
-    key = f.read().strip().split('=')[1]
+if not TELEGRAM_TOKEN:
+    raise ValueError("TELEGRAM_BOT_TOKEN not set in environment")
+if not OPENROUTER_KEY:
+    raise ValueError("OPENROUTER_API_KEY not set in environment")
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=key)
+client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=OPENROUTER_KEY)
 
 tools = [
     {"type": "function", "function": {"name": "get_current_time", "description": "Get current date and time", "parameters": {"type": "object", "properties": {}, "required": []}}},
@@ -24,7 +23,7 @@ tools = [
 ]
 
 def get_current_time():
-    return datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 def calculate(expression):
     try: return f"{expression} = {eval(expression)}"
@@ -99,7 +98,7 @@ async def chat(update: Update, context: ContextTypes.DEFAULT_TYPE):
         logger.error(f"Error: {e}")
         await update.message.reply_text(f"Error: {e}")
 
-app = ApplicationBuilder().token(token).build()
+app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("help", help_command))
 app.add_handler(CommandHandler("ping", ping))
