@@ -24,7 +24,7 @@ tools = [
 ]
 
 def get_current_time():
-    return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    return datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 
 def calculate(expression):
     try: return f"{expression} = {eval(expression)}"
